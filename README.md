@@ -36,6 +36,10 @@ RISC-V is an open-source computer architecture that allows for flexible design o
 - The RISC-V Instruction Set Manual-Volume I: User-Level ISA-Document Version 2.2
 - The RISC-V Reader:An Open Architecture Atlas-Beta Edition, 0.0.1-David Patterson and Andrew Waterma
 - https://www.proquest.com/docview/1622629195
+- https://baseconvert.com/ieee-754-floating-point
+- https://luplab.gitlab.io/rvcodecjs/
+- http://weitz.de/ieee/
+- https://upcommons.upc.edu/bitstream/handle/2099.1/15467/32BitFloatingPointAdder.pdf
 
 
 # Contributors:
