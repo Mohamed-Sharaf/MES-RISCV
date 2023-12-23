@@ -13,7 +13,7 @@
     - Q - the square root
      
     
-    Initialization 
+    Initialization: 
     - A = 00000000,  X = input, T = 00000000,  Q =0000.
     - Add the implicit bit to the MSB of the input. 
     - Initialize A & T (have the same width of input) with Zero’s.
@@ -25,3 +25,7 @@
     - Repeat the pervious steps Q times (have half width of the input bits).
     - Round the result of the mantissa to the desired precision (based on rm field). Normalize the result by adjusting the exponent and mantissa as needed.
 
+
+# Microarchitecture:
+
+![sqrt_schematic](https://github.com/Mohamed-Sharaf/MES-RISCV/blob/main/assets/images/sqrt_schematic.jpg)
