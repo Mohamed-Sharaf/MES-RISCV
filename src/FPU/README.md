@@ -46,7 +46,7 @@ Instructions supported by FPU Unit:
 
 # Load And Store Module
 
-* Workflow:
+- Workflow:
  > flw (load word instruction for floating-point words):
  - reads the word in the memory of address specified by the offset in the immediate field and the content of the integer register of address specified by the content of rs1.
  - Writes this word in floating-point register of address specified by the content of rd field.
@@ -57,6 +57,6 @@ Instructions supported by FPU Unit:
 
 # Sign Module
 
-*Workflow:
+- Workflow:
 
 
