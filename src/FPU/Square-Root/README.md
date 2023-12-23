@@ -12,15 +12,15 @@
     - T - result of sign test
     - Q - the square root
 
-<>Initialization 
-A = 00000000,  X = input, T = 00000000,  Q =0000.
-Add the implicit bit to the MSB of the input. 
-Initialize A & T (have the same width of input) with Zero’s.
-Initialize Q (have half width of the input) with Zero’s.
-Left shift X by two places into A.
-Set T = A - {Q,01}: 01 - 01.
-Left shift Q.
-Is T ≥ 0? Yes. Set A=T and Q[0]=1. | No. Move to next step.
-Repeat the pervious steps Q times (have half width of the input bits).
-Round the result of the mantissa to the desired precision (based on rm field). Normalize the result by adjusting the exponent and mantissa as needed.
-![image](https://github.com/Mohamed-Sharaf/MES-RISCV/assets/61689053/c15f9f90-c109-4b94-8ea0-320412b824cf)
+    - > Initialization 
+    - A = 00000000,  X = input, T = 00000000,  Q =0000.
+    - Add the implicit bit to the MSB of the input. 
+    - Initialize A & T (have the same width of input) with Zero’s.
+    - Initialize Q (have half width of the input) with Zero’s.
+    - Left shift X by two places into A.
+    - Set T = A - {Q,01}: 01 - 01.
+    - Left shift Q.
+    - Is T ≥ 0? Yes. Set A=T and Q[0]=1. | No. Move to next step.
+    - Repeat the pervious steps Q times (have half width of the input bits).
+    - Round the result of the mantissa to the desired precision (based on rm field). Normalize the result by adjusting the exponent and mantissa as needed.
+
