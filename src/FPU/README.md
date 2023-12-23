@@ -58,11 +58,11 @@ Instructions supported by FPU Unit:
 # Sign Module
 
 - Workflow:
-  - fsgnj.s: Floating-Point Sign Injection:
+- fsgnj.s: Floating-Point Sign Injection:
    - This instruction computes the result of injecting the sign of one single-precision floating-point operand into another. Specifically, it takes two operands: rs1 and rs2. The sign of the result is taken from rs2, and the magnitude is taken from rs1.
-  - fsgnjn.s: Floating-Point Sign Injection Negate:
+- fsgnjn.s: Floating-Point Sign Injection Negate:
    - This instruction is similar to fsgnj.s, but it negates the sign of the result. It takes two operands, rs1 and rs2. The sign of the result is the negation of the sign of rs2, and the magnitude is taken from rs1.
-  - fsgnjx.s: Floating-Point Sign Injection XOR:
+- fsgnjx.s: Floating-Point Sign Injection XOR:
    - This instruction also performs sign injection, but the sign is the XOR of the signs of the two operands. It takes two operands, rs1 and rs2. The sign of the result is the XOR of the signs of rs1 and rs2, and the magnitude is taken from rs1.
 
 
