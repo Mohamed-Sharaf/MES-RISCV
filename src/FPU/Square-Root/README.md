@@ -11,6 +11,7 @@
     - A - holds the current value we’re working on
     - T - result of sign test
     - Q - the square root
+    - 
 
     > Initialization 
     - A = 00000000,  X = input, T = 00000000,  Q =0000.
