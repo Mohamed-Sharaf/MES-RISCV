@@ -1,0 +1,63 @@
+force -freeze sim:/fp_add_sub/A_S 0 0
+force -freeze sim:/fp_add_sub/Num_A 0 0
+force -freeze sim:/fp_add_sub/B 01111110110101010101010101010101 0
+run
+force -freeze sim:/fp_add_sub/A 01111111010101010101010101010101 0
+force -freeze sim:/fp_add_sub/B 11111111100000000000000000000000000000000000 0
+
+run
+force -freeze sim:/fp_add_sub/B 11111111100000000000000000000000 0
+run
+force -freeze sim:/fp_add_sub/A 11111111100000000000000000000000 0
+run
+force -freeze sim:/fp_add_sub/B 01111111100000000000000000000000 0
+run
+run
+force -freeze sim:/fp_add_sub/B 01111111110101010101010101010001 0
+run
+force -freeze sim:/fp_add_sub/B 01111110110101010101010101010001 0
+force -freeze sim:/fp_add_sub/A 01111110110101010101010101010101 0
+force -freeze sim:/fp_add_sub/A_S 1 0
+run
+force -freeze sim:/fp_add_sub/A 011110101010101010101010101010101 0
+force -freeze sim:/fp_add_sub/B 01111010110101010101010101010001 0
+
+force -freeze sim:/fp_add_sub/B 01111010110101010101010101010101 0
+run
+force -freeze sim:/fp_add_sub/A 011110101010101010101010101010101 0
+run
+force -freeze sim:/fp_add_sub/A 01111010101010101010101010101010 0
+run
+/////
+force -freeze sim:/fp_add_sub/A 11111101010011001100110011001100 0
+force -freeze sim:/fp_add_sub/A_S St0 0
+force -freeze sim:/fp_add_sub/B 01111101001010100101010110101010 0
+run
+force -freeze sim:/fp_add_sub/A 11111000010111011101110111011101 0
+force -freeze sim:/fp_add_sub/B 11111000010111001101110011011100 0
+run
+force -freeze sim:/fp_add_sub/A_S St1 0
+force -freeze sim:/fp_add_sub/A 01111100110111011101110111011101 0
+force -freeze sim:/fp_add_sub/B 11111011110111001101110011011100 0
+run
+--------subnormal
+force -freeze sim:/fp_add_sub/A 00000000010101010101010101010001 0
+force -freeze sim:/fp_add_sub/A_S St0 0
+force -freeze sim:/fp_add_sub/B 00000000010101010101010101010101 0
+run
+force -freeze sim:/fp_add_sub/A 00000000011111111111111111111111 0
+force -freeze sim:/fp_add_sub/B 10000000001010100101010110101010 0
+run
+force -freeze sim:/fp_add_sub/A 00000000001010100101010110101010 0
+force -freeze sim:/fp_add_sub/B 10000000011111111111111111111111 0
+run
+
+
+orce -freeze sim:/fp_add_sub/A 100000000100000000000000000000000 0
+force -freeze sim:/fp_add_sub/A 10000000010111011101110111011101 0
+force -freeze sim:/fp_add_sub/A_S St1 0
+force -freeze sim:/fp_add_sub/B 10000000000111011101110111011101 0
+run
+force -freeze sim:/fp_add_sub/A 10000000010111001101110011011100 0
+force -freeze sim:/fp_add_sub/B 00000000010111011101110111011101 0
+run
