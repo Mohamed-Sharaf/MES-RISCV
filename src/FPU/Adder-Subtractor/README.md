@@ -12,3 +12,11 @@ While adding or subtracting the two floating point numbers, two cases may arise.
 - Amount of shifting i.e., “y” is added to exponent of N2 value. New exponent value of E2 = (previous E2) + “y”. Now result is in normalize form because E1 = E2.
 - Check if N1 and N2 have different sign, if “no”.
 - Add the significands of 24 bits each including hidden bit S=S1+S2.
+
+
+# Microarchitecture:
+
+![add_schematic](https://github.com/Mohamed-Sharaf/MES-RISCV/blob/main/assets/images/add_schematic.jpg)
+
+- Sign computation
+![Sign_computation](https://github.com/Mohamed-Sharaf/MES-RISCV/blob/main/assets/images/Sign_computation.png)
