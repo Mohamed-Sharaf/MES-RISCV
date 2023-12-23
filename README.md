@@ -5,6 +5,7 @@ Single Cycle RISC-V processor extended by Single Precision Floating Point Unit (
 
 - [Introduction](#Introduction)
 - [Microarchitecture](#Microarchitecture)
+- [Directory Structure](#directory-structure)
 - [References](#References)
 - [Contributors](#contributors)
 
@@ -24,6 +25,9 @@ RISC-V is an open-source computer architecture that allows for flexible design o
 # Microarchitecture
 
 
+
+# Directory Structure:
+  * [README](./README.md): This file.
 
 # References
 - The RISC-V Instruction Set Manual-Volume I: User-Level ISA-Document Version 2.2
