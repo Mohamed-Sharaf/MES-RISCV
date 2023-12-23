@@ -11,9 +11,10 @@
     - A - holds the current value we’re working on
     - T - result of sign test
     - Q - the square root
-    - 
-
-    > Initialization 
+     
+    ```
+    Initialization 
+    ```
     - A = 00000000,  X = input, T = 00000000,  Q =0000.
     - Add the implicit bit to the MSB of the input. 
     - Initialize A & T (have the same width of input) with Zero’s.
