@@ -35,6 +35,8 @@ RISC-V is an open-source computer architecture that allows for flexible design o
 # References
 - The RISC-V Instruction Set Manual-Volume I: User-Level ISA-Document Version 2.2
 - The RISC-V Reader:An Open Architecture Atlas-Beta Edition, 0.0.1-David Patterson and Andrew Waterma
+- https://www.proquest.com/docview/1622629195
+
 
 # Contributors:
 - Designed By: (listed alphabetically)
