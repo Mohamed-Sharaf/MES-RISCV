@@ -1,5 +1,43 @@
-# Note: 
-> This FPU Implementation is Fully Combinational
+# IEEE 754 Floating-Point standard
+
+Representations of floating-point data in the binary formats are encoded in k bits in the following three fields ordered as shown in Figure below:
+![s1](https://github.com/Mohamed-Sharaf/MES-RISCV/blob/main/assets/images/s1.png)
+
+If a Single Precision format is used the bits will be divided in that way:
+- The first bit (31st bit) is set the sign (S) of the number (0 positive and 1 negative)
+- Next 8 bits (from 30th to 23rd bit) represents the exponent (E)
+- The rest of the string, t, (from 22nd to 0) is reserved to save the mantissa.
+
+The range of the encoding biased exponent is divided in three sections:
+- Every integer between 1 and 2^𝑤 -2 (being w=8 → 254(10) to encode the normal numbers
+- The value 0 which encodes subnormal numbers and the zero value.
+- The reserved value 2^𝑤 -1 (being w=8 → 255(10) to encode some special cases as NaN or ±∞
+- The exponent value has a bias of 127. It means the exponent value will be between -126 (00000000(2) and +127 (11111110(2) being zero at the value (01111111(2).
+
+![s2](https://github.com/Mohamed-Sharaf/MES-RISCV/blob/main/assets/images/s2.png)
+
+Exponent and mantissa values determine the different number r cases that it can be had.
+- If E = 2^𝑤 -1 and T ≠ 0, then r is NaN regardless of S
+- If E = 2^𝑤 -1 and T = 0, then r is ±infinity according with the sign bit S
+- If 1 ≤ E ≤ 2^𝑤 -2, then r is a normal number.
+- If E = 0 and T ≠ 0, then r is a subnormal number
+- If E = 0 and T = 0, then r is ±zero according with S
+
+![s3](https://github.com/Mohamed-Sharaf/MES-RISCV/blob/main/assets/images/s3.png)
+
+
+# IEEE 754 Floating-Point (rounding modes)
+
+> Round and Guard bits:
+Guard bits: extra bits are needed for rounding guards against loss of a significant bit.
+IEEE 754 standard specifies four modes of rounding:
+- Round to Nearest Even: default rounding mode
+- Round toward +∞: result is rounded up.
+- Round toward –∞: result is rounded down.
+- Round toward 0: always truncate result
+
+![round](https://github.com/Mohamed-Sharaf/MES-RISCV/blob/main/assets/images/round.png)
+
 
 # FPU Instructions
 Instructions supported by FPU Unit:
@@ -135,3 +173,5 @@ Instructions supported by FPU Unit:
 
 
 
+# Note: 
+> This FPU Implementation is Fully Combinational
