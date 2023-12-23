@@ -24,7 +24,7 @@ RISC-V is an open-source computer architecture that allows for flexible design o
 
 # Microarchitecture
 
-
+![risc.bold.trans](/assets/images/risc.bold.trans.png)
 
 # Directory Structure:
   * [README](./README.md): This file.
