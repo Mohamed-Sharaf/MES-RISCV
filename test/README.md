@@ -3,9 +3,9 @@
 Instructions Supported by The Added FPU Extension 
 
 # Machine Code:
-
+```math
 $\rightarrow  factorial of 8
- 
+```
 00004033
 00800093    
 00100113
