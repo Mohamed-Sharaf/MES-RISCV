@@ -1,1 +1,1 @@
-This FPU Implementation is Fully Compinational
+This FPU Implementation is Fully Combinational
