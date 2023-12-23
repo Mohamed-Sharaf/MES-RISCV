@@ -1,7 +1,9 @@
 # Addition And Subtraction Module
 
 > Workflow:
-While adding or subtracting the two floating point numbers, two cases may arise. * Case I: when both the numbers are of same sign i.e., when both the numbers are either +ve or –ve. In this case MSB of both the numbers are either 1 or 0. * Case II: when both the numbers are of different sign i.e., when one number is +ve and other number is –ve. In this case the MSB of one number is 1 and other is 0.
+While adding or subtracting the two floating point numbers, two cases may arise.
+> Case I: when both the numbers are of same sign i.e., when both the numbers are either +ve or –ve. In this case MSB of both the numbers are either 1 or 0.
+> Case II: when both the numbers are of different sign i.e., when one number is +ve and other number is –ve. In this case the MSB of one number is 1 and other is 0.
 
 - Extract the sign, exponent, and mantissa from the floating-point numbers.
 - Enter two numbers N1 and N2. E1, S1 and E1, S2 represent exponent and significand of N1 and N2 respectively.
