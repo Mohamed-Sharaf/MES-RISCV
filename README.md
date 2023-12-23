@@ -28,6 +28,9 @@ RISC-V is an open-source computer architecture that allows for flexible design o
 
 # Directory Structure:
   * [README](./README.md): This file.
+  * [RISC-V](./src/): TOP.
+  * [FPU](./src/FPU/): Floating Point Unit.
+  * [Test](./test/): Test Files and results.
 
 # References
 - The RISC-V Instruction Set Manual-Volume I: User-Level ISA-Document Version 2.2
