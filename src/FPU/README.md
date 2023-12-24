@@ -148,6 +148,7 @@ Instructions supported by FPU Unit:
 - if the exponent is all ones and mantissa isn’t 0, then it’s NAN, if the sign field is 0: quiet NAN writes 9, if the sign field is 1: signaling NAN writes 8.
 - if the exponent is neither 0 nor all: it’s a normal number, if the sign field is 0: +ve writes 6, if the sign field is 1: -ve writes 1.
 
+![classify](https://github.com/Mohamed-Sharaf/MES-RISCV/blob/main/assets/images/classify.png)
 
 # Min. And Max. Module
 
